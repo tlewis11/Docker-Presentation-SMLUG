@@ -24,7 +24,7 @@ echo "======= cloning git repo.."
 rm -rf Docker-Presentation-SMLUG
 git clone git@github.com:tlewis11/Docker-Presentation-SMLUG.git
 pushd Docker-Presentation-SMLUG/containers/python_app
-  docker build -t my-python-app.
+  docker build -t my-python-app .
   docker run -t my-python-app -p 8000:8000
 popd
 
