@@ -1,5 +1,4 @@
 #!/bin/bash
 
-echo "Hello from the Python container"
-pip install -r requirements.txt
+echo "Hello from the entrypoint script"
 python -m SimpleHTTPServer 8000
