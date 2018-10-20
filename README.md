@@ -30,7 +30,7 @@ docker run -p80:80 -v /tmp/my_docker_volume:/usr/share/nginx/html:ro -d nginx
 
   ```
     cd Docker-Presentation-SMLUG/containers/nodejs_app
-    docker build -t my-nodejsapp .
+    docker build -t my-nodejs-app .
     docker run -p 8001:8001 -t my-nodejs-app 
   ```
   Browse to localhost:8001  
