@@ -1,0 +1,17 @@
+--- 
+version: '3'
+
+services:
+  python-service-container:
+    build: /projects/Docker-Presentation-SMLUG/containers/python_app
+    ports:
+      - "8000:8000"
+
+  java-service-container:
+    build: /projects/Docker-Presentation-SMLUG/containers/java_app
+    ports:
+      - "8080:8080"
+
+  nodejs-service-container:
+    build: /projects/Docker-Presentation-SMLUG/containers/nodesjs_app
+      - "8001:8001"
