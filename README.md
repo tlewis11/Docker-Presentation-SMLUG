@@ -10,11 +10,15 @@ October 20, 2018
 ```
 mkdir /tmp/my_docker_volume
 echo "<htmlHello From >My Custom Nginx Container</html>" > /tmp/my_docker_volume/index.html
-docker run --name my_nginx -p80:80 -v /tmp/my_docker_volume:/usr/share/nginx/html:ro -d nginx
+docker run -p80:80 -v /tmp/my_docker_volume:/usr/share/nginx/html:ro -d nginx
 ```
 ---
 
-# Custom Containers
+# Running Custom Containers: 
+  1. Clone this repo: `git clone https://github.com/tlewis11/Docker-Presentation-SMLUG.git`.
+  2. Build and run custom containers from the ./containers directory.
+--- 
+
 ## Build the custom Python container 
   ```
     cd containers python_app
